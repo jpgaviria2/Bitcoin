@@ -3,43 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My App Tutorials</title>
+    <title>GitHub.io Remodeling</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <style>
-        .container {
-            max-width: 900px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1 class="text-center my-4">My App Tutorials</h1>
+    <header>
+        <!-- Add your navigation and logo here -->
+    </header>
 
-        <h3>Posts</h3>
-        <ul>
-            <li><a href="post1.html">Post 1: Introduction to Application 1</a></li>
-            <li><a href="post2.html">Post 2: Getting Started with Application 2</a></li>
-            <!-- Add more post links here -->
-        </ul>
+    <section class="container mt-5">
+        <h1>Garage, Backyard, and Deck Remodelations</h1>
+        <p>Get a personalized design based on your preferences and requirements using AI.</p>
+        
+        <form id="remodelation-form">
+            <div class="form-group">
+                <label for="remodelation-type">Remodelation Type</label>
+                <select class="form-control" id="remodelation-type" required>
+                    <option value="" disabled selected>Select a type</option>
+                    <option value="garage">Garage</option>
+                    <option value="backyard">Backyard</option>
+                    <option value="deck">Deck</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="size">Size (sq ft)</label>
+                <input type="number" class="form-control" id="size" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="style">Style</label>
+                <input type="text" class="form-control" id="style" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="description">House Description</label>
+                <textarea class="form-control" id="description" rows="3" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
 
-        <h3>Tutorials</h3>
-        <ul>
-            <li><a href="tutorial1.html">Tutorial 1: How to Set Up Application 1</a></li>
-            <li><a href="tutorial2.html">Tutorial 2: Advanced Features of Application 2</a></li>
-            <!-- Add more tutorial links here -->
-        </ul>
+    <footer>
+        <!-- Add your footer content here -->
+    </footer>
 
-        <h3>Support Us</h3>
-        <p>If you find our content helpful, please consider supporting us by making a donation via BTCpay:</p>
-        <!--  <div id="btcpay">
-            <!-- Add your BTCpay server button or QR code here -->
-            <!-- Replace the 'data-button-code' value with your own BTCpay server data -->
-           <!--  <button data-button-code="your-btcpay-data" class="btcpay-button">Donate with Bitcoin</button>
-            <script src="https://your-btcpay-server-domain/btcpay.js"></script> 
-        </div>-->
-    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
